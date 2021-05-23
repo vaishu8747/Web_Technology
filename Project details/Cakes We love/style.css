@@ -1,0 +1,46 @@
+@keyframes changecolor {
+    0% { color: red; }
+    25% { color: goldenrod; }
+    50% { color: turquoise;}
+    75% { color: navy;}
+    100% { color: yellowgreen;}
+}
+#animate{
+    color:blue;
+    animation-name: changecolor;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+.card{
+    height: 350px;
+    margin: 2px;
+    
+}
+.card-img-top{
+    height: 200px;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+      background-color:blue;
+    }
+
+.carousel-control-prev,
+.carousel-control-next{
+  top:auto;
+  bottom:auto;
+  padding-top:222px;
+ }
+ 
+body .carousel-indicators{
+    bottom:0;
+    }
+.carousel-indicators .active{
+    background-color:blue;
+}
+.card-text{
+
+}
