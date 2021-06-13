@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Booking Card</title>
+    <title> UR Booking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- library validate -->
@@ -10,14 +10,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
     <!-- style css -->
-    <link rel="stylesheet" href="booking details style.css">
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon//site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
@@ -25,7 +18,8 @@
 <div class="row">
     <div class="col-75">
         <div class="container">
-            <form id="validate" action="/action_page.php">
+            <!-- <form id="validate" action="/action_page.php"> -->
+                <form id="validate" >    
                 <div class="row">
                     <div class="col-50">
                         <h3>Booking Details!!!</h3>
@@ -37,6 +31,8 @@
                         <input type="text" id="adr" name="address" placeholder="110 W. 15th Phnom Penh" required>
                         <label for="city"><i class="fa fa-institution"></i> City</label>
                         <input type="text" id="city" name="city" placeholder="Phnom Penh" required>
+                        <label for="Phone No"><i class="fa fa-institution"></i> Phone No</label>
+                        <input type="text" id="phn" name="phone no" placeholder="11111 22222" required>
 
                         <div class="row">
                             <div class="col-50">
@@ -81,11 +77,11 @@
                 <label>
                 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                 </label>
-                <input type="submit" value="Continue to checkout" class="btn">
+               <a href="E:\Project details\Cakes We love\Status.html"><input type="submit" value="Continue to checkout" class="btn"></a>
             </form>
         </div>
     </div>
-    <div class="col-25">
+<!-- <div class="col-25">
         <div class="container">
             <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
             <p><a href="#">IPHONE 12 Pro Mac</a> <span class="price">$1500</span></p>
@@ -95,7 +91,7 @@
             <hr>
             <p>Total <span class="price" style="color:black"><b>$12600</b></span></p>
         </div>
-    </div>
+</div> -->
 </div>
 <!-- script validate js -->
 <script>
@@ -112,6 +108,9 @@
             },
             city: {
                 required: true,
+            },
+            PhoneNo:{
+                required:true,
             },
             state: {
                 required: true,
@@ -142,6 +141,7 @@
             city:"Please input city*",
             address:"Please input address*",
             state:"Please input state*",
+            PhoneNo:"Please enter your phone number*",
             zip:"Please input address*",
             cardname:"Please input card name*",
             cardnumber:"Please input card number*",
