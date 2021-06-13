@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+	<style>
+		div{
+			background-color: lightpink;
+			width: 400px;
+			height: 600px;
+			border-radius: 5px;
+			padding: 15px;
+			margin: 10px;
+			
+		}
+		button{
+				border-radius: 10px;
+				background-color: red;
+				margin-bottom: 2px;
+				margin-left: 5px;
+				margin-right: 5px;
+				
+		}	
+		input,textarea{
+			border: 2px solid blue;
+			padding: 5px;
+			margin: 1px;
+			border-radius: 2px;
+
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="register.php">
+		<div>
+						<h1 align="center">Sign Up</h1>
+						<lable>Username</lable>
+							<input type="text" name="Username" placeholder="Enter Username"><br>
+							<lable>Phone_no</lable>
+							<input type="tel" name="ph" placeholder="Enter number"><br>
+							<lable>Address</lable>
+							<textarea placeholder="Enter Address" name="Address"></textarea><br>
+							
+							<lable>Email</lable>
+							<input type="email" name="Email" placeholder="Enter Email"><br>
+							<lable>Password</lable>
+							<input type="password" name="Password" placeholder="Enter Password"><br><br>
+							<input type="submit" name="save" value="Submit" onclick="document.location='default.asp'">
+							
+					</div>
+		</form>
+
+</body>
+</html>
